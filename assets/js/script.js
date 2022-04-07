@@ -1,5 +1,33 @@
 //add in an on load function so that it puts all variables stored in local storage into their respective places
-
+$(document).ready(function() {
+    if(localStorage.getItem("text9") !== null){
+        $("#textInput9").text(JSON.parse(localStorage.getItem("text9")));
+    }
+    if(localStorage.getItem("text10") !== null){
+        $("#textInput10").text(JSON.parse(localStorage.getItem("text10")));
+    }
+    if(localStorage.getItem("text11") !== null){
+        $("#textInput11").text(JSON.parse(localStorage.getItem("text11")));
+    }
+    if(localStorage.getItem("text12") !== null){
+        $("#textInput12").text(JSON.parse(localStorage.getItem("text12")));
+    }
+    if(localStorage.getItem("text1") !== null){
+        $("#textInput1").text(JSON.parse(localStorage.getItem("text1")));
+    }
+    if(localStorage.getItem("text2") !== null){
+        $("#textInput2").text(JSON.parse(localStorage.getItem("text2")));
+    }
+    if(localStorage.getItem("text3") !== null){
+        $("#textInput3").text(JSON.parse(localStorage.getItem("text3")));
+    }
+    if(localStorage.getItem("text4") !== null){
+        $("#textInput4").text(JSON.parse(localStorage.getItem("text4")));
+    }
+    if(localStorage.getItem("text5") !== null){
+        $("#textInput5").text(JSON.parse(localStorage.getItem("text5")));
+    }
+});
 
 
 //first i need to set current time and date on the header jumbo tron
@@ -18,7 +46,8 @@ var timerInterval = setInterval(function() {
 //its called fake hour cause i used it for testing and its too much work to go and change everything
 var fakeHour = moment().format('HH');
 
-
+//this block sets the background color based on current time
+//red = current hour, green = future hour, grey = past hour
 if(fakeHour == 9) {
     $("#textInput9").css("background-color", "red");
 }else if(fakeHour > 9) {
