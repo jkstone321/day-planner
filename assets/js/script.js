@@ -44,72 +44,72 @@ var timerInterval = setInterval(function() {
 //on future hours the background is green
 
 //its called fake hour cause i used it for testing and its too much work to go and change everything
-var fakeHour = moment().format('HH');
-
+var currentHour = moment().format('HH');
+// 
 //this block sets the background color based on current time
 //red = current hour, green = future hour, grey = past hour
-if(fakeHour == 9) {
-    $("#textInput9").css("background-color", "red");
-}else if(fakeHour > 9) {
-    $("#textInput9").css("background-color", "grey");
-}else if(fakeHour < 9) {
-    $("#textInput9").css("background-color", "green");
+if(currentHour == 9) {
+    $("#textInput9").css("background-color", "#ff6f67");
+}else if(currentHour > 9) {
+    $("#textInput9").css("background-color", "#aaaaaa");
+}else if(currentHour < 9) {
+    $("#textInput9").css("background-color", "#77dd77");
 }
-if(fakeHour == 10) {
-    $("#textInput10").css("background-color", "red");
-}else if(fakeHour > 10) {
-    $("#textInput10").css("background-color", "grey");
-}else if(fakeHour < 10) {
-    $("#textInput10").css("background-color", "green");
+if(currentHour == 10) {
+    $("#textInput10").css("background-color", "#ff6f67");
+}else if(currentHour > 10) {
+    $("#textInput10").css("background-color", "#aaaaaa");
+}else if(currentHour < 10) {
+    $("#textInput10").css("background-color", "#77dd77");
 }
-if(fakeHour == 11) {
-    $("#textInput11").css("background-color", "red");
-}else if(fakeHour > 11) {
-    $("#textInput11").css("background-color", "grey");
-}else if(fakeHour < 11) {
-    $("#textInput11").css("background-color", "green");
+if(currentHour == 11) {
+    $("#textInput11").css("background-color", "#ff6f67");
+}else if(currentHour > 11) {
+    $("#textInput11").css("background-color", "#aaaaaa");
+}else if(currentHour < 11) {
+    $("#textInput11").css("background-color", "#77dd77");
 }
-if(fakeHour == 12) {
-    $("#textInput12").css("background-color", "red");
-}else if(fakeHour > 12) {
-    $("#textInput12").css("background-color", "grey");
-}else if(fakeHour < 12) {
-    $("#textInput12").css("background-color", "green");
+if(currentHour == 12) {
+    $("#textInput12").css("background-color", "#ff6f67");
+}else if(currentHour > 12) {
+    $("#textInput12").css("background-color", "#aaaaaa");
+}else if(currentHour < 12) {
+    $("#textInput12").css("background-color", "#77dd77");
 }
-if(fakeHour == 13) {
-    $("#textInput1").css("background-color", "red");
-}else if(fakeHour > 13) {
-    $("#textInput1").css("background-color", "grey");
-}else if(fakeHour < 13) {
-    $("#textInput1").css("background-color", "green");
+if(currentHour == 13) {
+    $("#textInput1").css("background-color", "#ff6f67");
+}else if(currentHour > 13) {
+    $("#textInput1").css("background-color", "#aaaaaa");
+}else if(currentHour < 13) {
+    $("#textInput1").css("background-color", "#77dd77");
 }
-if(fakeHour == 14) {
-    $("#textInput2").css("background-color", "red");
-}else if(fakeHour > 14) {
-    $("#textInput2").css("background-color", "grey");
-}else if(fakeHour < 14) {
-    $("#textInput2").css("background-color", "green");
+if(currentHour == 14) {
+    $("#textInput2").css("background-color", "#ff6f67");
+}else if(currentHour > 14) {
+    $("#textInput2").css("background-color", "#aaaaaa");
+}else if(currentHour < 14) {
+    $("#textInput2").css("background-color", "#77dd77");
 }
-if(fakeHour == 15) {
-    $("#textInput3").css("background-color", "red");
-}else if(fakeHour > 15) {
-    $("#textInput3").css("background-color", "grey");
-}else if(fakeHour < 15) {
-    $("#textInput3").css("background-color", "green");
+if(currentHour == 15) {
+    $("#textInput3").css("background-color", "#ff6f67");
+}else if(currentHour > 15) {
+    $("#textInput3").css("background-color", "#aaaaaa");
+}else if(currentHour < 15) {
+    $("#textInput3").css("background-color", "#77dd77");
 }
-if(fakeHour == 16) {
-    $("#textInput4").css("background-color", "red");
-}else if(fakeHour > 16) {
-    $("#textInput4").css("background-color", "grey");
-}else if(fakeHour < 16) {
-    $("#textInput4").css("background-color", "green");
+if(currentHour == 16) {
+    $("#textInput4").css("background-color", "#ff6f67");
+}else if(currentHour > 16) {
+    $("#textInput4").css("background-color", "#aaaaaa");
+}else if(currentHour < 16) {
+    $("#textInput4").css("background-color", "#77dd77");
 }
-if(fakeHour == 17) {
-    $("#textInput5").css("background-color", "red");
-}else if(fakeHour > 17) {
-    $("#textInput5").css("background-color", "grey");
-}else if(fakeHour < 17) {
-    $("#textInput5").css("background-color", "green");
+if(currentHour == 17) {
+    $("#textInput5").css("background-color", "#ff6f67");
+}else if(currentHour > 17) {
+    $("#textInput5").css("background-color", "#aaaaaa");
+}else if(currentHour < 17) {
+    $("#textInput5").css("background-color", "#77dd77");
 }
 
 //if there is currently data in the local storage i need to display that in the
